@@ -9,7 +9,7 @@
         "project-team": "Project team",
         "john-doe": "John Doe",
         "bawa-amarnath-sania": "Bawa Amarnath Sania",
-        "johnny-doe": "Johnny Doe",
+        "lim-tze-shaun": "Lim Tze Shaun",
         "bryan-leng": "Bryan Leng",
         "ryan-toh": "Ryan Toh"
       },
@@ -159,6 +159,14 @@
       "src": "team/sania.md",
       "headings": {
         "bawa-amarnath-sania": "Bawa Amarnath Sania"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/shaun.md",
+      "title": "John Doe's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
       },
       "headingKeywords": {}
     }
