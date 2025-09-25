@@ -8,10 +8,10 @@
         "about-us": "About Us",
         "project-team": "Project team",
         "john-doe": "John Doe",
-        "jane-doe": "Jane Doe",
+        "bawa-amarnath-sania": "Bawa Amarnath Sania",
         "johnny-doe": "Johnny Doe",
         "bryan-leng": "Bryan Leng",
-        "james-doe": "James Doe"
+        "ryan-toh": "Ryan Toh"
       },
       "headingKeywords": {}
     },
@@ -146,6 +146,20 @@
     {
       "src": "team/nghaowei.md",
       "headings": {},
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/ryan-toh.md",
+      "headings": {
+        "ryan-toh": "Ryan Toh"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/sania.md",
+      "headings": {
+        "bawa-amarnath-sania": "Bawa Amarnath Sania"
+      },
       "headingKeywords": {}
     }
   ]
