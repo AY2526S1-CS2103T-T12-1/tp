@@ -7,9 +7,9 @@
       "headings": {
         "about-us": "About Us",
         "project-team": "Project team",
-        "john-doe": "John Doe",
-        "jane-doe": "Jane Doe",
-        "johnny-doe": "Johnny Doe",
+        "ng-hao-wei": "Ng Hao Wei",
+        "bawa-amarnath-sania": "Bawa Amarnath Sania",
+        "lim-tze-shaun": "Lim Tze Shaun",
         "bryan-leng": "Bryan Leng",
         "ryan-toh": "Ryan Toh"
       },
@@ -152,6 +152,21 @@
       "src": "team/ryan-toh.md",
       "headings": {
         "ryan-toh": "Ryan Toh"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/sania.md",
+      "headings": {
+        "bawa-amarnath-sania": "Bawa Amarnath Sania"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/shaun.md",
+      "title": "John Doe's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
       },
       "headingKeywords": {}
     }
