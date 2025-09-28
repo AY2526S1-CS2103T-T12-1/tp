@@ -118,3 +118,77 @@
 - **2b. Command has typo**
     - 2b1. EduDex suggests possible correct commands
     - 2b2. Use case resumes at step 1
+
+---
+
+## Appendix B: Product Scope
+
+### Target User Profile
+- Freelance tutor who prefers using CLI
+- Has many students to keep track of
+- Needs to manage student details, tuition fees, and grades
+- Prefers keyboard input over mouse interaction
+- Comfortable with command-line interfaces
+
+### Value Proposition
+Manage student records **faster than typical GUI applications**, with optimized workflows for tutor-specific needs like scheduling, fee tracking, and grade management.
+
+---
+
+## Appendix C: User Stories
+
+| Priority | As a …        | I want to …                                | So that I can…                                      |
+|----------|---------------|---------------------------------------------|-----------------------------------------------------|
+| ***      | new tutor      | see a guided tour with sample data          | understand how EduDex works without entering my own data first |
+| ***      | tutor          | add a new student with contact details      | keep track of my students' information              |
+| ***      | tutor          | view all my students at once                | get an overview of my teaching load                 |
+| ***      | tutor          | delete a student who has stopped tuition    | keep my records up to date                          |
+| ***      | tutor          | set default hourly rates for different subjects | maintain consistent pricing                     |
+| **       | tutor          | add parents' contact information            | contact parents when needed                         |
+| **       | tutor          | modify student details easily               | update information when circumstances change        |
+| **       | tutor          | find students by name or subject            | quickly locate specific student records             |
+| **       | tutor          | track assignment submissions                | identify students who haven't submitted work        |
+| *        | tutor          | calculate monthly earnings                  | understand my income patterns                       |
+| *        | expert user    | use keyboard shortcuts                      | work more efficiently                               |
+
+**User stories not included in v1.0:**
+- Opening a tuition center and sharing the app with other tutors
+- Advanced analytics and reporting features
+- Integration with external calendar systems
+
+---
+
+## Appendix E: Non-Functional Requirements
+
+### Performance Requirements
+- Should respond within 2 seconds for any command with up to 1000 students
+- Should start up within 5 seconds on a standard laptop
+
+### Usability Requirements
+- Should be usable by tutors with no technical background after a brief tutorial
+- Error messages should be clear and suggest corrections
+- Keyboard-first interface with intuitive command structure
+
+### Reliability Requirements
+- Should not lose data under normal usage conditions
+- Should handle unexpected shutdowns gracefully
+
+### Portability Requirements
+- Should work on Windows, macOS, and Linux without modification
+- Should require only Java 11 or above as a dependency
+
+### Scalability Requirements
+- Should handle up to 1000 student records without performance degradation
+- Data file format should allow for future expansion of fields
+
+---
+
+## Appendix F: Glossary
+
+- **CLI**: Command Line Interface — A text-based interface for interacting with software
+- **Tutee**: A student who receives tuition from a tutor
+- **Tuition session**: A scheduled teaching period with a student
+- **Hourly rate**: The amount charged per hour of tuition
+- **Student profile**: The complete record of a student including contact details, subjects, and schedule
+- **Assignment tracking**: Monitoring of homework submissions and deadlines
+- **Default rate**: The standard hourly rate applied unless specified otherwise  
