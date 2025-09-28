@@ -191,4 +191,4 @@ Manage student records **faster than typical GUI applications**, with optimized 
 - **Hourly rate**: The amount charged per hour of tuition
 - **Student profile**: The complete record of a student including contact details, subjects, and schedule
 - **Assignment tracking**: Monitoring of homework submissions and deadlines
-- **Default rate**: The standard hourly rate applied unless specified otherwise  
+- **Default rate**: The standard hourly rate applied unless specified otherwise
