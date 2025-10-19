@@ -5,10 +5,10 @@ import java.util.Set;
 
 import seedu.edudex.model.person.Address;
 import seedu.edudex.model.person.Day;
-import seedu.edudex.model.person.Email;
 import seedu.edudex.model.person.Name;
 import seedu.edudex.model.person.Person;
 import seedu.edudex.model.person.Phone;
+import seedu.edudex.model.person.School;
 import seedu.edudex.model.person.Subject;
 import seedu.edudex.model.person.Time;
 import seedu.edudex.model.tag.Tag;
@@ -21,7 +21,7 @@ public class PersonBuilder {
 
     public static final String DEFAULT_NAME = "Amy Bee";
     public static final String DEFAULT_PHONE = "85355255";
-    public static final String DEFAULT_EMAIL = "amy@gmail.com";
+    public static final String DEFAULT_SCHOOL = "Queenstown Primary School";
     public static final String DEFAULT_ADDRESS = "123, Jurong West Ave 6, #08-111";
     public static final String DEFAULT_DAY = "Monday";
     public static final String DEFAULT_STARTTIME = "10:00";
@@ -29,7 +29,7 @@ public class PersonBuilder {
 
     private Name name;
     private Phone phone;
-    private Email email;
+    private School school;
     private Address address;
     private Set<Tag> tags;
     private Day day;
@@ -42,7 +42,7 @@ public class PersonBuilder {
     public PersonBuilder() {
         name = new Name(DEFAULT_NAME);
         phone = new Phone(DEFAULT_PHONE);
-        email = new Email(DEFAULT_EMAIL);
+        school = new School(DEFAULT_SCHOOL);
         address = new Address(DEFAULT_ADDRESS);
         tags = new HashSet<>();
         day = new Day(DEFAULT_DAY);
@@ -56,7 +56,7 @@ public class PersonBuilder {
     public PersonBuilder(Person personToCopy) {
         name = personToCopy.getName();
         phone = personToCopy.getPhone();
-        email = personToCopy.getEmail();
+        school = personToCopy.getSchool();
         address = personToCopy.getAddress();
         tags = new HashSet<>(personToCopy.getTags());
         day = personToCopy.getSubject().getDay();
@@ -97,10 +97,10 @@ public class PersonBuilder {
     }
 
     /**
-     * Sets the {@code Email} of the {@code Person} that we are building.
+     * Sets the {@code School} of the {@code Person} that we are building.
      */
-    public PersonBuilder withEmail(String email) {
-        this.email = new Email(email);
+    public PersonBuilder withEmail(String school) {
+        this.school = new School(school);
         return this;
     }
 
@@ -129,7 +129,7 @@ public class PersonBuilder {
     }
 
     public Person build() {
-        return new Person(name, phone, email, address, tags, new Subject(day, startTime, endTime));
+        return new Person(name, phone, school, address, tags, new Subject(day, startTime, endTime));
     }
 
 }

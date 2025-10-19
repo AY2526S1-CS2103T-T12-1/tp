@@ -19,7 +19,7 @@ public class Person {
     // Identity fields
     private final Name name;
     private final Phone phone;
-    private final Email email;
+    private final School school;
 
     // Data fields
     private final Address address;
@@ -31,11 +31,11 @@ public class Person {
     /**
      * Every field must be present and not null.
      */
-    public Person(Name name, Phone phone, Email email, Address address, Set<Tag> tags, Subject subject) {
-        requireAllNonNull(name, phone, email, address, tags);
+    public Person(Name name, Phone phone, School school, Address address, Set<Tag> tags, Subject subject) {
+        requireAllNonNull(name, phone, school, address, tags);
         this.name = name;
         this.phone = phone;
-        this.email = email;
+        this.school = school;
         this.address = address;
         this.tags.addAll(tags);
         this.subject = subject;
@@ -49,8 +49,8 @@ public class Person {
         return phone;
     }
 
-    public Email getEmail() {
-        return email;
+    public School getSchool() {
+        return school;
     }
 
     public Address getAddress() {
@@ -104,7 +104,7 @@ public class Person {
         Person otherPerson = (Person) other;
         return name.equals(otherPerson.name)
                 && phone.equals(otherPerson.phone)
-                && email.equals(otherPerson.email)
+                && school.equals(otherPerson.school)
                 && address.equals(otherPerson.address)
                 && tags.equals(otherPerson.tags);
     }
@@ -112,7 +112,7 @@ public class Person {
     @Override
     public int hashCode() {
         // use this method for custom fields hashing instead of implementing your own
-        return Objects.hash(name, phone, email, address, tags, subject);
+        return Objects.hash(name, phone, school, address, tags, subject);
     }
 
     @Override
@@ -120,7 +120,7 @@ public class Person {
         return new ToStringBuilder(this)
                 .add("name", name)
                 .add("phone", phone)
-                .add("email", email)
+                .add("school", school)
                 .add("address", address)
                 .add("tags", tags)
                 .add("day", subject.getDay())
