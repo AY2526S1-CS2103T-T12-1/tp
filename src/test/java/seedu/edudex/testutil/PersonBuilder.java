@@ -99,7 +99,7 @@ public class PersonBuilder {
     /**
      * Sets the {@code School} of the {@code Person} that we are building.
      */
-    public PersonBuilder withEmail(String school) {
+    public PersonBuilder withSchool(String school) {
         this.school = new School(school);
         return this;
     }
