@@ -199,6 +199,8 @@ public class AddCommandTest {
         @Override
         public void sortLessonsForEachPerson() {
 
+        }
+
         public void updateSubjectList(Predicate<Subject> predicate) {
             throw new AssertionError("This method should not be called.");
         }
