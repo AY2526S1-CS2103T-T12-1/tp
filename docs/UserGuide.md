@@ -259,6 +259,14 @@ Examples:
 * `list` followed by `delete 2` deletes the 2nd student in EduDex.
 * `find Betsy` followed by `delete 1` deletes the 1st student in the results of the `find` command.
 
+<box type="tip" seamless>
+
+**Tip:** You can delete multiple students if needed.
+1. perform `find KEYWORD [MORE_KEYWORDS]` followed by `delete 1`.
+2. the list remains filtered so you can delete more students matching the criteria if needed.
+
+  </box>
+
 ### Adding a lesson: `addlesson`
 
 Adds a lesson to the student in EduDex, specified by index.
