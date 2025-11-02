@@ -21,13 +21,28 @@ public class DeleteLessonCommandParser implements Parser<DeleteLessonCommand> {
                     DeleteLessonCommand.MESSAGE_USAGE));
         }
 
-        try {
-            Index studentIndex = ParserUtil.parseIndex(parts[0]);
-            Index lessonIndex = ParserUtil.parseIndex(parts[1]);
-            return new DeleteLessonCommand(studentIndex, lessonIndex);
-        } catch (ParseException pe) {
-            throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT,
-                    DeleteLessonCommand.MESSAGE_USAGE), pe);
+        String studentRaw = parts[0];
+        String lessonRaw = parts[1];
+
+        if (!studentRaw.matches("\\d+") || !lessonRaw.matches("\\d+")) {
+            throw new ParseException("Invalid format — indices must be integers");
         }
+
+        Index studentIndex;
+        Index lessonIndex;
+
+        try {
+            studentIndex = ParserUtil.parseIndex(studentRaw);
+        } catch (ParseException pe) {
+            throw new ParseException("Invalid student index");
+        }
+
+        try {
+            lessonIndex = ParserUtil.parseIndex(lessonRaw);
+        } catch (ParseException pe) {
+            throw new ParseException("Invalid lesson index");
+        }
+
+        return new DeleteLessonCommand(studentIndex, lessonIndex);
     }
 }

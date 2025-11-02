@@ -35,7 +35,9 @@ public class DeleteLessonCommandParserTest {
 
     @Test
     public void parseInvalidArgsNonNumericThrowsParseException() {
-        assertParseFailure(parser, "a b",
-                String.format(MESSAGE_INVALID_COMMAND_FORMAT, DeleteLessonCommand.MESSAGE_USAGE));
+        DeleteLessonCommandParser parser = new DeleteLessonCommandParser();
+        String userInput = "1 a";
+        String expectedMessage = "Invalid format — indices must be integers";
+        CommandParserTestUtil.assertParseFailure(parser, userInput, expectedMessage);
     }
 }
