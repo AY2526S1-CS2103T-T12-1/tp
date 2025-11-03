@@ -113,6 +113,7 @@
       "title": "User Guide",
       "headings": {
         "edudex-user-guide": "EduDex User Guide",
+        "target-audience": "Target Audience",
         "quick-start": "Quick start",
         "features": "Features",
         "viewing-help-help": "Viewing help : help",
@@ -120,7 +121,6 @@
         "deleting-a-subject-delsub": "Deleting a subject : delsub",
         "adding-a-student-add": "Adding a student: add",
         "listing-all-students-list": "Listing all students : list",
-        "editing-a-student-edit": "Editing a student : edit",
         "locating-students-by-name-day-or-subject-find": "Locating students by Name, Day, or Subject: find",
         "deleting-a-student-delete": "Deleting a student : delete",
         "adding-a-lesson-addlesson": "Adding a lesson: addlesson",
