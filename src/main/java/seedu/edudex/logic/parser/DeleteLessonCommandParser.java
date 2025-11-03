@@ -25,7 +25,8 @@ public class DeleteLessonCommandParser implements Parser<DeleteLessonCommand> {
         String lessonRaw = parts[1];
 
         if (!studentRaw.matches("\\d+") || !lessonRaw.matches("\\d+")) {
-            throw new ParseException("Invalid format — indices must be integers");
+            throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT,
+                    DeleteLessonCommand.MESSAGE_USAGE));
         }
 
         Index studentIndex;

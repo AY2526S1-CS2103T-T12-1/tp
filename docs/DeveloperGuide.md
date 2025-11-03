@@ -257,12 +257,12 @@ The command structure is as follows:
 
 #### Example error cases
 
-| Input | Result |
-|--------|--------|
-| `dellesson 0 1` | Invalid student index |
-| `dellesson 1 0` | Invalid lesson index |
-| `dellesson 1 99` | The lesson index provided is invalid |
-| `dellesson 1 a` | Invalid format — indices must be integers |
+| Input | Result                                            |
+|--------|---------------------------------------------------|
+| `dellesson 0 1` | Invalid student index                             |
+| `dellesson 1 0` | Invalid lesson index                              |
+| `dellesson 1 99` | The lesson index provided is invalid              |
+| `dellesson 1 a` | Invalid command format |
 
 ---
 
