@@ -484,7 +484,7 @@ Use case ends.
    Use case ends.
 
 **Extensions:**
-- **1b. Missing subject parameter**
+- **1a. Missing subject parameter**
     - 1a1. EduDex shows an error message  
       Use case ends.
 
@@ -793,6 +793,7 @@ Use case ends.
 * **RAM**: Random Access Memory. Main memory of the computer, used for temporary storage of data and instructions.
 * **SSD**: Solid State Drive. A high speed storage device that stores data permanently.
 * **Student**: Refers to a learner or individual being taught by the user of this application. Interchangeable with "Person".
+* **JSON**: JavaScript Object Notation. A lightweight text-based format used by EduDex to store and retrieve data such as students, subjects and lessons
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -801,6 +802,7 @@ Use case ends.
 1. **Allow deleting of subjects by name**: EduDex currently only supports deleting subjects by their <u>index</u> in the displayed list. Adding the ability to delete a subject directly by its <u>name</u> (e.g. `delsub sub/Math`) would make the command more intuitive and user-friendly, especially when tutors manage many subjects. This enhancement will be considered for future versions.
 2. **Lessons are sorted in chronological order after adding lesson**: EduDex currently does not sort the lesson timings after adding a lesson. Adding the ability to sort it automatically after adding a lesson would add more user convenience
 3. **Allow finding on an already filtered list**: After the first `find` command, EduDex currently uses the original unfiltered list to perform the subsequent find leading to inconvenience. Adding the ability to find within the filtered list would make it more useful 
+4. **Auto resizing of window size between subject panel and student list panel**: EduDex currently does not adjust the window size automatically after relaunch. Adding the ability to do so will add user convenience
 
 --------------------------------------------------------------------------------------------------------------------
 ## **Appendix: Instructions for manual testing**

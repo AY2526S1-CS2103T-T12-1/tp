@@ -112,7 +112,7 @@ Adds a subject to EduDex.
 Format: `addsub SUBJECT`
 
 **Field Requirements:**
-* `SUBJECT` can be any alphanumeric string.
+* `SUBJECT` can be any alphanumeric string. (maximum of 50 characters)
 * Subject names are **case-insensitive** (e.g., `Math` is the same as `math`).
 
 <box type="warning" seamless>
@@ -162,11 +162,11 @@ Adds a student to EduDex.
 Format: `add n/NAME p/PHONE_NUMBER sch/SCHOOL a/ADDRESS [t/TAG]`
 
 **Field Requirements:**
-* `NAME` should only contain alphanumeric characters and spaces, must not be blank
+* `NAME` should only contain alphanumeric characters and spaces, must not be blank (maximum of 50 characters)
 * `PHONE_NUMBER` should only contain numbers, at least 3 digits long
-* `SCHOOL` should only contain alphanumeric characters, special characters (except `/`) and spaces, must not be blank
-* `ADDRESS` can be any value, must not be blank
-* `TAG` (optional) should be alphanumeric
+* `SCHOOL` should only contain alphanumeric characters, special characters (except `/`) and spaces, must not be blank (maximum of 50 characters)
+* `ADDRESS` can be any value, must not be blank (maximum of 50 characters)
+* `TAG` (optional) should be alphanumeric (maximum of 50 characters)
 
 <box type="warning" seamless>
 
